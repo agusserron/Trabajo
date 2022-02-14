@@ -11,6 +11,7 @@
 <script src="js/testFuncionalidad.js"> </script>
 
 </head>
+<img src="img/logo.jpg">
 <h1>Formulario Metadatos</h1>
 
 
