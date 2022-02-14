@@ -1,0 +1,28 @@
+
+body {
+    width: 1000px;
+    margin: 50 auto;
+    background-color: #e2dfdb;
+    padding: 0 20px 20px 20px;
+    border: 3px solid rgb(51, 50, 50);
+}
+html {
+    
+    font-size: 100px; 
+    font-family:sans-serif; 
+}
+
+h1{
+    margin: 30 auto;
+    font-size: 30px;
+    font-family:"Titillium Web"; 
+    color: #259f00;
+    text-align: center;
+}
+
+.form-label{ 
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+
+
