@@ -12,6 +12,8 @@
 
 </head>
 <h1>Formulario Metadatos</h1>
+<h1>Formulario Metadatos</h1>
+
 <body>
 <form action="formpost.php" method="post" onsubmit="return validar();"> 
 <div class="mb-3">
