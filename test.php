@@ -63,20 +63,24 @@
 </body>
 
  <!--Conexion a base de datos -->
- <?php
-/*$servername = "localhost";
-$database = "test";
-$username = "root";
-$password = " ";
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $database);
-// Check connection
-/*if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+
+
+<?php //COMO MOSTRAR DATOS DE LA BASE DE DATOS 
+/*$pdo = new PDO('mysql:host=localhost;dbname=test;charset=utf8', 'root', '');
+$sql = "SELECT * FROM metadato";
+foreach ($pdo->query($sql) as $row) {
+   echo $row['titulo'] . "<br />";
+   echo "Descripcion " . $row['descripcion'] . "<br />";
 }
-echo "Connected successfully";
-mysqli_close($conn);*/
+//INSERTAR DATOS 
+$pdo = new PDO('mysql:host=localhost;dbname=test;charset=utf8', 'root', '');
+$sql = "INSERT INTO users (forename, surname, email, password) 
+VALUES ('Paddy', 'Irish', 'paddy@irish.com', 'qaywsx')";
+if ($pdo->exec($sql) === 1)
+  echo "New record created successfully";
+*/
 ?>
+
 
 </html>
 
