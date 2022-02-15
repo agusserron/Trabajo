@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="es">
 <html>
     <head>
     <LINK REL=StyleSheet HREF="css/testEstilo.css" TYPE="text/css" MEDIA=screen>
@@ -17,22 +19,23 @@
 
 <body>
 <form action="formpost.php" method="post" onsubmit="return validar();"> 
+
 <div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Título:</label>
+  <label for="titulo" class="form-label">Título:</label>
   <input type="text" class="form-control" id="titulo">
 </div>
 
 <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">ID:</label>
+    <label for="id" class="form-label">ID:</label>
     <input type="text" class="form-control" id="id">
   </div>
 
   <div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Descripción:</label>
+  <label for="descripcion" class="form-label">Descripción:</label>
   <textarea class="form-control" id="descripcion" rows="3"></textarea>
 </div>
 <div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Propósito de generación:</label>
+  <label for="proposito" class="form-label">Propósito de generación:</label>
   <textarea class="form-control" id="proposito" rows="3"></textarea>
 </div>
 <select class="form-select" aria-label="Default select example">
@@ -60,27 +63,19 @@
 </body>
 
  <!--Conexion a base de datos -->
-<?php 
-$servidor = "localhost";
-$usuario = "root";
-$contrasena = "";
-
-$modo=$_SERVER['HTTP_HOST']; //localizamos el servidor
-//if ($modo=="localhost") { //datos en servidor local
-    $servidor="localhost";
-    $usuario="root";
-    $contrasena="";
-    $base="test";
-//    }
-//else { //datos en servidor web
- //   $servidor="nombre_servidor_web"; 
-  // $usuario="nombre_usuario_web";
-  //  $contrasena="contraseña_em_web";
-  //  $base="nombre_base_web";
-   // }
-
-   $mysqli = new mysqli($servidor,$usuario,$contrasena)
-    
+ <?php
+/*$servername = "localhost";
+$database = "test";
+$username = "root";
+$password = " ";
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $database);
+// Check connection
+/*if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
+mysqli_close($conn);*/
 ?>
 
 </html>

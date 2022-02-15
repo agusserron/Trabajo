@@ -1,16 +1,6 @@
 //alert("Hola mundo\nEsta es otra línea");
 
-/* CONFIRMAR DATOS 
-var ok = confirm("¿Enviar los datos?");
-if( ok == true )
-{
-    ...
-}
-else
-{
-    ...
-}
-*/
+
 
 /* PEDIR DATOS 
 var valor = prompt("Dime la contraseña", "");
@@ -29,12 +19,36 @@ function validar()
              {
                  var ok = true;
  
-                 if( document.getElementById("titulo").value == "")
+                 if(document.getElementById("titulo").value == "")
                  {
                      alert("Introduzca todos los datos");
                      ok = false;
                  }
  
-                 return ok;
+                 return swal("Oops!", "Something went wrong on the page!", "correcto");;
 }
 
+var titulo, id, descripcion, proposito;
+
+
+function obtenerDatos(){
+ titulo = document.getElementById("titulo").value;
+ id = document.getElementById("id").value;
+ descripcion = document.getElementById("descripcion").value;
+ proposito = document.getElementById("proposito").value;
+
+
+    var r = [titulo, id, descripcion, proposito];
+    return r;
+}
+/* CONFIRMAR DATOS 
+var ok = confirm("¿Enviar los datos?");
+if( ok == true )
+{
+    ...
+}
+else
+{
+    ...
+}
+*/
