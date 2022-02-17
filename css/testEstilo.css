@@ -115,3 +115,22 @@ background: rgba(131, 157, 37, 0.796);
 }
 
 
+/* search bar right align */
+/* styling search bar */
+       
+
+          
+    /* styling search bar */
+    .search input[type=text]{
+        width:500px;
+        height:30px;
+        border-radius:25px;
+        border: none;
+    }
+          
+    .search{
+        float:left;
+        margin:7px;
+    }
+          
+    
