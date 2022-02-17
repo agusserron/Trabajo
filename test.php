@@ -61,10 +61,9 @@
 
 
 </div>
-   
-
-    <input type="submit" value="Enviar">
-    
+    <div class="mt-4">
+    <input class="btn" type="submit" value="Enviar">
+    </div>
 </form>
 </body>
 
