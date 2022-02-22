@@ -126,11 +126,44 @@
   <option value="1">UTM</option>
 
 </select>
+<select class="form-select" aria-label="Default select example"id="coberturaEspacial">
+  <option selected>Cobertura espacial</option>
+  <option value="1">Completar</option>
+
+</select>
+<select class="form-select" aria-label="Default select example"id="coberturaTemporal">
+  <option selected>Cobertura temporal</option>
+  <option value="1">Completar</option>
+</select>
+<div class="mb-3">
+    <label for="id" class="form-label">Escala:</label>
+    <input type="text" class="form-control" id="escala">
+</div>
+
+<p>
+<div class="mb-3">
+<label for="id" class="form-label">Ingresar tabla de campos:</label>
+
+    <input type="file" name="archivosubido">
+  
+  </p>
+</div>
+
+<div class="mb-3">
+    <label for="id" class="form-label">Restricciones legales:</label>
+    <input type="text" class="form-control" id="restLegales">
+</div>
+
+</select>
+<select class="form-select" aria-label="Default select example"id="norma">
+  <option selected>Norma calidad metadatos</option>
+  <option value="1">ISO 19115:2003/19139</option>
+</select>
 
 
 <p>
 <div class="mb-3">
-<label for="id" class="form-label">Agregar archivo:</label>
+<label for="id" class="form-label">Otro archivo:</label>
 
     <input type="file" name="archivosubido">
   
