@@ -18,6 +18,8 @@
 <body>
 
 <!-- search bar right align -->
+<div class="box-interna">
+<div class="mb-3">
 <div class="search">
             <form action="#">
                 <input type="text"
@@ -27,8 +29,8 @@
                 <input class="btn" type="submit" value="Buscar">
                 
             </form>
- 
+            </div>
  </div>
-
+ </div>
  </html>
 </body>

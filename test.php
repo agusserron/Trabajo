@@ -15,6 +15,8 @@
 <img src="img/logo.jpg">
 <h1>Formulario Metadatos</h1>
 
+
+
 <ul>
 <li><a class="active" href="test.php">Agregar</a></li>
   <li><a class="active" href="busqueda.php">Busqueda</a></li>
@@ -22,9 +24,12 @@
 </ul>
 
 <body>
-<div class="box">
+<div class="box-interna">
 <form action="formpost.php" method="post" onsubmit="return validar();"> 
 
+<div class="mb-3">
+    
+</div>
 
 <div class="mb-3">
   <label for="titulo" class="form-label">Título:</label>
@@ -34,9 +39,9 @@
 <div class="mb-3">
     <label for="id" class="form-label">ID:</label>
     <input type="text" class="form-control" id="id">
-  </div>
+</div>
 
-  <div class="mb-3">
+<div class="mb-3">
   <label for="descripcion" class="form-label">Descripción:</label>
   <textarea class="form-control" id="descripcion" rows="3"></textarea>
 </div>
@@ -44,25 +49,102 @@
   <label for="proposito" class="form-label">Propósito de generación:</label>
   <textarea class="form-control" id="proposito" rows="3"></textarea>
 </div>
-<select class="form-select" aria-label="Default select example">
+<div class="mb-3">
+    <label for="id" class="form-label">Palabras clave temáticas:</label>
+    <input type="text" class="form-control" id="PalabrasClaveT">
+</div>
+<div class="mb-3">
+    <label for="id" class="form-label">Palabras clave geográficas:</label>
+    <input type="text" class="form-control" id="PalabrasClaveG">
+</div>
+<div class="mb-3">
+<label for="descripcion" class="form-label">Fecha de creación:</label>
+<input type="date" id="descripcion" name="trip-start"
+       value="2018-07-22"
+       min="1996-01-01" max="2060-12-31">
+</div>
+<select class="form-select" aria-label="Default select example" id="estado">
   <option selected>Estado</option>
   <option value="1">Activo</option>
   <option value="2">Resultado intermedio</option>
   <option value="3">Obsoleto</option>
 </select>
-<select class="form-select" aria-label="Default select example">
+<select class="form-select" aria-label="Default select example" id="formato">
   <option selected>Formato</option>
   <option value="1">SHP</option>
   <option value="2">TIFF</option>
   <option value="3">PNG</option>
-  <option value="3">KML</option>
-  <option value="3">CSV</option>
+  <option value="4">KML</option>
+  <option value="5">CSV</option>
 </select>
+
+<select class="form-select" aria-label="Default select example"id="categoria">
+  <option selected>Categoría</option>
+  <option value="1">Geonetwork</option>
+  <option value="2">Otra</option>
+</select>
+
+<select class="form-select" aria-label="Default select example"id="idioma">
+  <option selected>Idioma</option>
+  <option value="1">Español</option>
+  <option value="2">Inglés </option>
+  <option value="3">Portugués </option>
+</select>
+<div class="mb-3">
+<label for="descripcion" class="form-label">Última actualización</label>
+<input type="date" id="start" name="trip-start"
+       value="2018-07-22"
+       min="1996-01-01" max="2060-12-31">
+</div>
+<select class="form-select" aria-label="Default select example"id="frecActualiazacion">
+  <option selected>Frecuencia de actualización</option>
+  <option value="1">Mensual</option>
+  <option value="2">Anual</option>
+  <option value="3">Desconocido</option>
+  <option value="4">Según necesidad</option>
+</select>
+
+
+<div class="mb-3">
+    <label for="id" class="form-label">Contacto del recurso:</label>
+    <input type="text" class="form-control" id="PalabrasClave">
+</div>
+<div class="mb-3">
+    <label for="id" class="form-label">Disponible:</label>
+    <input type="text" class="form-control" id="PalabrasClave">
+</div>
+
+<select class="form-select" aria-label="Default select example"id="tipoRep">
+  <option selected>Tipo de representación:</option>
+  <option value="1">Vectorial</option>
+  <option value="2">Ráster</option>
+  <option value="3">Imágen</option>
+  <option value="4">Tabla de texto</option>
+</select>
+<select class="form-select" aria-label="Default select example"id="coordenadas">
+  <option selected>Sistema de referencia de coordenadas:</option>
+  <option value="1">UTM</option>
+
+</select>
+
+
+<p>
+<div class="mb-3">
+<label for="id" class="form-label">Agregar archivo:</label>
+
+    <input type="file" name="archivosubido">
+  
+  </p>
+  </div>
+
+
 </div>
     <div class="mt-4">
     <input class="btn" type="submit" value="Enviar">
     </div>
 </form>
+
+
 </body>
 
  <!--Conexion a base de datos -->

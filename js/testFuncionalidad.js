@@ -25,7 +25,7 @@ function validar()
                      ok = false;
                  }
  
-                 return swal("Oops!", "Something went wrong on the page!", "correcto");;
+               
 }
 
 var titulo, id, descripcion, proposito;

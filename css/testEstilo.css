@@ -1,16 +1,27 @@
 
 body {
-    width: 1000px;
-    margin: 50 auto;
+    width: 1600px;
+    margin: 0 auto;
     background-color: #dddddc;
     padding: 0 200px 50px 50px;
-    border: 3px solid rgb(180, 180, 180);
-    
+    border: 3px solid rgb(180, 180, 180);  
+   
 }
-html {
-    
+   
+form {
+    /* Centrar el formulario en la página */
+    margin: 80 auto;
+    width: 650px;
+    /* Esquema del formulario */
+    padding: 0 700px 80px 50px;
+    border: 1px solid rgb(180, 180, 180);  
+    border-radius: 10px;
+}
+html{        
     font-size: 10px; 
     font-family:sans-serif; 
+    padding: 1em;
+    border: 1px solid rgb(185, 178, 178);   
 }
 
 h1{
@@ -22,16 +33,34 @@ h1{
 }
 img{
     width: 250px;
-   
+    padding: 1em;      
 }
 
 
 .form-label{ 
     font-size: 16px;
-    color: rgb(0, 0, 0);
+    color: rgb(22, 22, 22);
+    
 }
 
-.form-select {
+.form-control{
+    width: 400px;
+    height: 20px;
+    border: 1px solid rgb(180, 174, 174); 
+    
+       
+}
+
+
+textarea{
+    /* Alinear los campos de texto multilínea con sus etiquetas */
+    vertical-align: top;
+  
+    /* Proporcionar espacio para escribir texto */
+    height: 5em;
+  }
+
+.form-select{
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: subpixel-antialiased;
     transition: .3s;
@@ -44,27 +73,33 @@ img{
     border-radius: 2px;
 }
 
-.box {
+.box-interna{
     background: #ffffff;
     border-radius: 3px;
     box-shadow: 0 1px 1px #cac7c7;
     position: relative;
-    padding-top: var(--measure4);
+    border: 50px solid #ffffff;
+    border-radius: 1em;
+    padding: 0 200px 150px 50px;
+  
 }
 
-ul {
+ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow:hidden;
     background-color: rgb(17, 17, 17);
+    border-radius: 1em;
 }
 
-li {
-    float: left;
+li{
+    float:left;
+    padding: 10 200px 50px 50px;
+   
 }
 
-li a {
+li a{
     display: block;
     color: white;
     text-align: center;
@@ -80,8 +115,9 @@ li a:hover {
 .box {
     background: #ffffff;
     border-radius: 3px;
-    box-shadow: 0 1px 1px #e0e0e0;
-    position: relative;
+    box-shadow: 0 10px 1px #a04d4d;
+    position:relative;
+    padding: 0 500px 150px 50px;
 }
 
 .mb-3{
@@ -132,5 +168,4 @@ background: rgba(131, 157, 37, 0.796);
         float:left;
         margin:7px;
     }
-          
-    
+
