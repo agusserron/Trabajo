@@ -168,13 +168,13 @@
     <input type="file" name="archivosubido">
   
   </p>
-  </div>
-
-
 </div>
-    <div class="mt-4">
+
+<div class="mt-4">
     <input class="btn" type="submit" value="Enviar">
     </div>
+</div>
+   
 </form>
 
 

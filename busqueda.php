@@ -27,10 +27,22 @@
                     name="search">
                 
                 <input class="btn" type="submit" value="Buscar">
-                
-            </form>
-            </div>
- </div>
- </div>
- </html>
+ </form>   
+            
+</div>
+</div>
+<p>
+ <?php //COMO MOSTRAR DATOS DE LA BASE DE DATOS 
+$pdo = new PDO('mysql:host=localhost;dbname=test;charset=utf8', 'root', '');
+$sql = "SELECT * FROM metadato";
+foreach ($pdo->query($sql) as $row) {
+   echo $row['titulo'] . "<br />";
+   echo "Descripcion " . $row['descripcion'] . "<br />";
+}
+?>
+</p>
+
+</div>
+
+</html>
 </body>
